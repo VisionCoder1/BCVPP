@@ -1,0 +1,648 @@
+[
+    {
+        "req_idx": "001",
+        "requirement": "\nGiven an input image (\"./squares.jpg\"), find all corners of the squares in the image and draw them as red circles(radius=3) on the image. Save the image as \"squares_with_corners.png\".\n",
+        "input_images": [
+            "./squares.jpg"
+        ]
+    },
+    {
+        "req_idx": "002",
+        "requirement": "\nGiven an RGB image (\"./test_image.png\"), slpit it into R, G, and B channels. For each channel, save it as RGB image with the channel as the only non-zero channel. For example, the red channel image should have the red channel as the only non-zero channel, and the green and blue channels should be zero. Save the three images as \"red_channel.png\", \"green_channel.png\" and \"blue_channel.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "003",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), do 2 pyramid scalings on it, one upscaling and one downscaling. Save the resulting images as \"upscaled.png\" and \"downscaled.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "004",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), add a mask to it. The mask is a white circle with a radius of 100 pixels centered at the center of the image with the rest pixels in black. Save the resulting image as \"masked_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "005",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), add a 3*3 kernel filter to it. The kernel filter is a 3*3 matrix with all elements equal to 1/9. Save the resulting image as \"filtered_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "006",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), add a sharpening filter to it. The sharpening filter is a 3*3 matrix with the following values: [[0, -1, 0], [-1, 5, -1], [0, -1, 0]]. Save the resulting image as \"sharpened_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "007",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), first convert it to graysacle. Then binarize the image using a threshold value of 128. Finally, find the contours in the binarized image, draw it in red (thickness=2) and save the resulting image as \"contours_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "008",
+        "requirement": "\nGiven an input image (\"./shapestomatch.jpg\") and a template image (\"./4star.jpg\"), find the cloest match of the template image in the input image. Draw the contours of the match in red and save the resulting image as \"matched_image.png\".\n",
+        "input_images": [
+            "./shapestomatch.jpg",
+            "./4star.jpg"
+        ]
+    },
+    {
+        "req_idx": "009",
+        "requirement": "\nGiven an input image (\"./blobs.jpg\"), find the blobs in the image. Draw the bounding boxes of the blobs in red (using drawKeypoints) and save the resulting image as \"blobs_image.png\".\n",
+        "input_images": [
+            "./blobs.jpg"
+        ]
+    },
+    {
+        "req_idx": "010",
+        "requirement": "\nGiven an input image (\"./wheres_waldo.jpg\") and a template image (\"./waldo.jpg\"), find the the template image in the input image. Draw the bounding box of the match in red and save the resulting image as \"waldo_image.png\".\n",
+        "input_images": [
+            "./wheres_waldo.jpg",
+            "./waldo.jpg"
+        ]
+    },
+    {
+        "req_idx": "011",
+        "requirement": "\nGiven an RGB image (\"./test_image.png\"), slpit it into three separate images, one for each channel (R, G, B) and save them as separate png files: \"red_channel.png\", \"green_channel.png\" and \"blue_channel.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "012",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), compute the Histogram of Oriented Gradients (HOG) for the image and save the result as \\\"hog.npy\\\". Use the following parameters: cell_size=(8, 8), block_size=(2, 2), nbins=9.\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "013",
+        "requirement": "\nGiven an input image (\"./test_image.png\") and a face cascade file (\"./haarcascade_frontalface_default.xml\"), detect the face (only one) in the image and draw a rectangle (in red, thickness=2) around it. Save the resulting image as \"face_detected.png\".\n",
+        "input_images": [
+            "./test_image.png",
+            "./haarcascade_frontalface_default.xml"
+        ]
+    },
+    {
+        "req_idx": "014",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), perform fast mean denoising on it. Use the following parameters: h=11, hForColorComponents=6, templateWindowSize=7, searchWindowSize=21. Save the resulting image as \"denoised_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "015",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), apply a arithmetic add and a substraction operation to it. The adding/substraction parameter is a value of 100. Save the resulting images as \"added_image.png\" and \"substracted_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "016",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), crop the middle 75% of the image and save it as \"cropped_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "017",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), perform a 180 degree rotation then a vertical flip on it. Save the resulting image as \"rotated_flipped_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "018",
+        "requirement": "\nGiven an input image (\"./someshapes.jpg\"), there is a rectangle, a square, a triangle, a circle and a star in the image. Find these shapes and draw the contours of the shape in different colors (thickness=2): red for the rectangle, green for the square, blue for the triangle, yellow for the circle and pink for the star. Save the resulting image as \"shapes_image.png\".\n",
+        "input_images": [
+            "./someshapes.jpg"
+        ]
+    },
+    {
+        "req_idx": "019",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), first convert it into HSV color space. Then, split the image into its three channels (Hue, Saturation, Value). Finally, save the HSV image as \"HSV.png\" and the three channels as \"hue_channel.png\", \"saturation_channel.png\", and \"value_channel.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "020",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), rescale the image into twice its original size using Linear Interpolation, Cubic Interpolation and Area Interpolation. Save the resulting images as \\\"linear_interpolation.png\\\", \\\"cubic_interpolation.png\\\" and \\\"area_interpolation.png\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "021",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), convert it to the LAB color space and save the resulting image as \"lab_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "022",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), apply Contrast Limited Adaptive Histogram Equalization (CLAHE) to enhance the contrast of the image (use clipLimit=2.0 and tileGridSize=(8, 8)), and save the result as clahe_image.png.\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "023",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), convert it into grayscale first, apply adaptive thresholding to convert it into a binary image( use cv2.ADAPTIVE_THRESH_GAUSSIAN_C and cv2.THRESH_BINARY_INV with blockSize=11 and C=2), and save the resulting image as \"binary_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "024",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), apply the morphological gradient operation, which highlights the difference between the dilation and erosion of an image. (Use a 5x5 kernel with cv2.MORPH_RECT shape). Save the resulting image as morphological_gradient.png.\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "025",
+        "requirement": "\nGiven an input image (\"./4star.jpg\"), analyze the image to detect vertical symmetry. Highlight the axis of symmetry (if detected) by drawing a vertical green line down the middle of the image. Save the resulting image as symmetry_detected.png.\n",
+        "input_images": [
+            "./4star.jpg"
+        ]
+    },
+    {
+        "req_idx": "026",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), convert it to the YUV color space and save the resulting image as yuv_image.png.\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "027",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), convert it to grayscale, apply the Sobel operator to detect horizontal and vertical edges (kernel size=3), and save the resulting edge map as sobel_edges.png.\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "028",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), draw an green ellipse with fixed parameters (center=(100, 100), axes=(100, 50), angle=45, thickness=2) on the image and save the resulting image as ellipse.png.\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "029",
+        "requirement": "\nGiven an image (\"./shapes_r.png\"), find and extract the largest connected component(not the background), switch all other pixels to black, and save the resulting image as largest_connected_component.png.\n",
+        "input_images": [
+            "./shapes_r.png"
+        ]
+    },
+    {
+        "req_idx": "030",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), apply a bilateral filter to smooth the image while preserving edges (Use a d=9, sigmaColor=75, sigmaSpace=75). Save the resulting image as bilateral_filtered_image.png.\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "031",
+        "requirement": "\nGiven an RGB image (\"./test_image.png\"), split it into three separate images, one for each channel (R, G, B) and calculate histograms with 256 bins for each channel. Save them as \"red_channel_hist.npy\", \"green_channel_hist.npy\", and \"blue_channel_hist.npy\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "032",
+        "requirement": "\nGiven an RGB image (\"./test_image.png\"), mask each channel at the center of the image with a square of length 100 and value 1, then apply contrast adjustment to each channel using alpha = 1.5 and beta = 50. Finally, save the resulting image as \"contrast_adjusted_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "033",
+        "requirement": "\nGiven an image (\"./test_image.png\"), perform 2 levels of pyramid scaling (upscaling and downscaling). Detect keypoints using ORB (nfeatures = 500) and draw the keypoints(using drawKeypoints) on the upscaled and downscaled images. Finally, save the resulting images as \"orb_upscaled.png\" and \"orb_downscaled.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "034",
+        "requirement": "\nGiven an image (\"./test_image.png\"), apply a circular mask (radius = 100 pixels) and a Gaussian blur (kernel size = 15, sigmaX = 10) outside the mask, keeping the center of the image sharp. Save the resulting image as \"final_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "035",
+        "requirement": "\nGiven an image (\"./test_image.png\"), apply a 3x3 gaussian filter with sigmax=5(using GaussianBlur) and perform Canny edge detection (thresholds 100, 200). Save the resulting image as \"canny_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "036",
+        "requirement": "\nGiven an image (\"./test_image.png\"), apply a sharpening filter of the following values: [[0, -1, 0], [-1, 5, -1], [0, -1, 0]]. Then apply a 5x5 gaussian filter with sigmax=5 (using GaussianBlur). Save the resulting image as \"sharpened_gaussian_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "037",
+        "requirement": "\nGiven an image (\"./test_image.png\"), convert to grayscale and apply adaptive thresholding (blockSize = 71, C = 2) for binarization. Finally detect contours of the binarized image and draw it in red (thickness=2). Save the resulting image as \"adaptive_threshold_contours.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "038",
+        "requirement": "\nGiven an image (\"./wheres_waldo.jpg\") and a template image(\"./waldo_scaled.jpg\"), perform multi-scale template matching (template scaling: 0.5x, 0.75x, 1.25x, 1.5x) and find the best match. Draw the bounding box of the best match in red (thickness=3) and save the resulting image as \"waldo_scaled_image.png\".\n",
+        "input_images": [
+            "./wheres_waldo.jpg",
+            "./waldo_scaled.jpg"
+        ]
+    },
+    {
+        "req_idx": "039",
+        "requirement": "\nGiven an image (\"./blobs.jpg\"), detect blobs using SimpleBlobDetector, classify them by circularity (threshold=0.7), inertia (threshold=0.5), convexity (threshold=0.9), and save the image with highlighted blobs as \"blobs_image.png\".\n",
+        "input_images": [
+            "./blobs.jpg"
+        ]
+    },
+    {
+        "req_idx": "040",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), use bilateral filtering with d = 9, sigmaColor = 75, sigmaSpace = 75, and apply multi-level Canny edge detection with thresholds at low = 50, medium = 100, and high = 150, blending the edges together and the stylized image with a weight of 0.8 for the stylized image and 0.2 for the edges. Save the resulting image as \"bilateral_canny_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "041",
+        "requirement": "\nGiven an image (\"./test_image.png\"), Apply an affine transformation (45\u00b0 rotation, 1.2x scaling, and translation by (50, 30) pixels) to the image, then perform Harris corner detection on both the original and transformed images with a block size of 2 and a ksize of 3. Save the resulting images as \"harris_original.png\" and \"harris_transformed.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "042",
+        "requirement": "\nGiven an image (\"./test_image.png\"), compute HOG features (cellSize = 8x8, blockSize = 2x2, nbins = 9) and compute the Local Binary Pattern features. Save the HOG features as \"hog_features.npy\" and the LBP features as \"lbp_features.npy\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "043",
+        "requirement": "\nGiven an image (\"./test_image.png\"), detect faces using Haar cascades (scaleFactor = 1.1, minNeighbors = 5) using \"./haarcascade_frontalface_default.xml\" and apply Gaussian blur (25x25) to the background, Save the resulting image as \"final_image.png\".\n",
+        "input_images": [
+            "./test_image.png",
+            "./haarcascade_frontalface_default.xml"
+        ]
+    },
+    {
+        "req_idx": "044",
+        "requirement": "\nGiven an image (\"./test_image.png\"), apply multiple filters, first median (kernel size = 5) then fast mean denoising (h = 10, templateWindowSize = 7, searchWindowSize = 21). Save results as \"final_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "045",
+        "requirement": "\nGiven an image (\"./test_image.png\"), apply arithmetic addition operations to the central circle region (radius=100) and subtraction operations to the outer region. The addition and subtraction values are 50 and 100, respectively. Save the resulting image as \"final_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "046",
+        "requirement": "\nGiven an image (\"./test_image.png\"), crop central 75% of the image and apply a perspective transformation to the cropped region (input points are the 4 corners of the cropped region, output points are [[10, 100], [10, 250], [300, 300], [300, 200]]). Save the resulting image as \"perspective_transformed_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "047",
+        "requirement": "\nGiven an image (\"./test_image.png\"), rotate it by 180 degrees, then detect its contours, and draw the contours in red (thickness=3). Finally, save the resulting image as \"rotated_contours.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "048",
+        "requirement": "\nGiven an image (\"./shapes_r.png\"), detect shapes using connectedComponentsWithStats (connectivity=8) and then compute the areas and perimeter of the shapes. Save the areas and perimeters into a npy file as \"areas_perimeters.npy\".\n",
+        "input_images": [
+            "./shapes_r.png"
+        ]
+    },
+    {
+        "req_idx": "049",
+        "requirement": "\nGiven an image (\"./test_image.png\"), convert to HSV, modify the Hue channel (+50), convert back to RGB, and save the resulting image as \"hue_modified_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "050",
+        "requirement": "\nGiven an image (\"./test_image.png\"), rescale using different interpolation methods (Linear, Cubic, Area), calculate pixel intensity differences between rescaled images, and save the results into npy files as \"diff_linear_cubic.npy\", \"diff_cubic_area.npy\", and \"diff_area_linear.npy\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "051",
+        "requirement": "\nGiven an image (\"./test_image.png\"), apply dynamic color filtering based on pixel brightness. For pixels with brightness above a certain threshold = 150, convert the region to grayscale, while leaving the rest of the image untouched. Save the result as \"filtered_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "052",
+        "requirement": "\nGiven an image (\"./blobs.jpg\"), detect all blobs and change the blobs into red (R=255, G=0, B=0) to the blob regions, then save the resulting image as \"blobs_red.png\".\n",
+        "input_images": [
+            "./blobs.jpg"
+        ]
+    },
+    {
+        "req_idx": "053",
+        "requirement": "\nGiven an image (\"./wheres_waldo.jpg\") and a rotated template image (\"./waldo_rotate.jpg\"), apply a rotation-invariant template matching algorithm by trying [0, 45, 90, 135] degrees to find the template in the image. Draw a rectangle around the template (thickness=2) in the image and save the resulting image as \"wheres_waldo_found.png\".\n",
+        "input_images": [
+            "./wheres_waldo.jpg",
+            "./waldo_rotate.jpg"
+        ]
+    },
+    {
+        "req_idx": "054",
+        "requirement": "\nGiven an image (\"./test_image.png\"), perform pyramid downscaling (factor x1, x0.5, x0.25) and apply Shi-Tomasi corner detection at each scale (maxCorners=100, qualityLevel=0.01, minDistance=10 and blockSize=3). Save the resulting images as \"test_image_corners_x1.png\", \"test_image_corners_x0.5.png\" and \"test_image_corners_x0.25.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "055",
+        "requirement": "\nGiven an image (\"./test_image.png\"), convert it to grayscale and apply region-based filtering (Gaussian Blur only on upper half), Gaussian Blur with a kernel size of 21x21 and sigmaX=11 (using GaussianBlur). Save the resulting image as \"test_image_filtered.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "056",
+        "requirement": "\nGiven an image (\"./test_image.png\"), convert it to grayscale first, and divide it into four quadrants. Apply following operations to each quadrant: 1. Top-left quadrant: Apply Gaussian Blur to smooth the image (kernel size=3, sigmaX=5). 2. Top-right quadrant: Apply Sobel Edge Detection to highlight edges (kernel size=5). 3. Bottom-left quadrant: Apply Image Sharpening to enhance details (kernel=[[0, -1, 0], [-1, 5, -1], [0, -1, 0]]) 4. Bottom-right quadrant: Apply Histogram Equalization to improve contrast. Save the resulting image as \"test_image_processed.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "057",
+        "requirement": "\nGiven an image (\"./test_image.png\"), detect faces using (\"./haarcascade_frontalface_default.xml\") and apply edge enhancement (sharpening with kernel [[0, -1, 0], [-1, 5, -1], [0, -1, 0]]) on the face region and add the edge on the original image. Save the resulting image as \"test_image_faces.png\".\n",
+        "input_images": [
+            "./test_image.png",
+            "./haarcascade_frontalface_default.xml"
+        ]
+    },
+    {
+        "req_idx": "058",
+        "requirement": "\nGiven an image (\"./test_image.png\"), apply bilateral filtering (with d = 9, sigmaColor = 75, sigmaSpace = 75) to reduce noise while preserving edges, followed by non-maximum suppression on the gradient magnitudes (using Sobel operators with ksize = 5 and an NMS threshold of 100) to enhance the most prominent edges, save the resulting image as \"test_image_edges.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "059",
+        "requirement": "\nGiven an image (\"./seg_image.png\"), apply K-means clustering to segment the image into distinct color regions based on pixel values. Use a specified number of clusters (e.g., k = 4), assign each pixel to its corresponding cluster, and save the segmented image with each region color-coded as \"seg_image_kmeans.png\".\n",
+        "input_images": [
+            "./seg_image.png"
+        ]
+    },
+    {
+        "req_idx": "060",
+        "requirement": "\nGiven an image (\"./wheres_waldo.jpg\") and a template (\"./waldo.jpg\"), adjust brightness (+50) to the image and perform template matching. Draw a rectangle around the matched region and save the resulting image as \"wheres_waldo_matched.png\".\n",
+        "input_images": [
+            "./wheres_waldo.jpg",
+            "./waldo.jpg"
+        ]
+    },
+    {
+        "req_idx": "061",
+        "requirement": "\nGiven an image (\"./blobs.jpg\"), detect blobs, for each blob, compute the center, area and perimeter, save the result into \"blobs.npy\".\n",
+        "input_images": [
+            "./blobs.jpg"
+        ]
+    },
+    {
+        "req_idx": "062",
+        "requirement": "\nGiven an image (\"./test_image.png\"), detect faces using \"./haarcascade_frontalface_default.xml\" and apply histogram equalization on the face region, save the resulting image as \"test_image_faces.png\".\n",
+        "input_images": [
+            "./test_image.png",
+            "./haarcascade_frontalface_default.xml"
+        ]
+    },
+    {
+        "req_idx": "063",
+        "requirement": "\nGiven an image (\"./test_image.png\"), add Gaussian noise with mean 0 and standard deviation 25, apply median filtering with kernel size 5x5, and detect corners using Harris corner detection. Save the resulting image as \"test_image_corners.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "064",
+        "requirement": "\nGiven an image (\"./test_image.png\"), scale it up and down by a factor of 2. And export histograms of original and scaled images, save the histograms as \"original_hist.npy\", \"upscaled_hist.npy\" and \"downscaled_hist.npy\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "065",
+        "requirement": "\nGiven an image (\"./test_image.png\"), convert to HSV, apply a circle mask at the center of the Hue channel with a radius of 100 pixels, convert it back to RGB and save the masked image as \"masked_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "066",
+        "requirement": "\nGiven an image (\"./texture_seg.png\"), divide the image into four fixed regions (top-left, top-right, bottom-left, and bottom-right). Apply flood fill starting from the center of each region to grow the region based on gradient similarity (threshold = 30). Highlighting the different regions with the following colors: red, green, blue, and yellow. Save the result as \"segmented_image.png\".\n",
+        "input_images": [
+            "./texture_seg.png"
+        ]
+    },
+    {
+        "req_idx": "067",
+        "requirement": "\nGiven an image (\"./test_image.png\"), detect corners (use maxCorners=100, qualityLevel=0.01, minDistance=10) and draw it in red (radius=3, thickness = -1), rotate at 90-degree, detect and draw corners again then rotate back to the original orientation and save the original and rotated back images as \"original_image.png\" and \"rotated_image_back.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "068",
+        "requirement": "\nGiven an image (\"./blobs.jpg\"), detect blobs, filter them by area (minArea = 1500, maxArea = 5000), draw the filtered blobs, and save the result as \"filtered_blobs.png\".\n",
+        "input_images": [
+            "./blobs.jpg"
+        ]
+    },
+    {
+        "req_idx": "069",
+        "requirement": "\nGiven an image (\"./test_image.png\"), rescale it to 2x size using linear and cubic interpolation, detect contours in red(thickness=3) on both rescaled images, and save the results as \"rescaled_linear.png\" and \"rescaled_cubic.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "070",
+        "requirement": "\nGiven an image (\"./test_image.png\"), split into R, G, B channels, apply keypoint matching (ORB) to each channel, draw keypoints in red and save the results as \"keypoints_R.png\", \"keypoints_G.png\", and \"keypoints_B.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "071",
+        "requirement": "\nGiven two images, one background image (\"./abraham.jpg\") and one object image (\"./test_image.png\"), first applying a 0.5x downscale then rotate 45 degrees to the object, then placing the transformed object onto the center of background using seamless cloning (Poisson blending). Save the result as \"seamless_cloning.png\".\n",
+        "input_images": [
+            "./abraham.jpg",
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "072",
+        "requirement": "\nGiven an image (\"./test_image.png\"), compute the gradient magnitude for each pixel using the Sobel operator (ksize=5). Based on the normaliazed gradient values, create a mask where the gradient is above a certain threshold=50. Apply a color overlay to the masked regions (mask weight 0.2, image weight 0.8), enhancing the prominent edges, and save the final image as \"edge_overlay.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "073",
+        "requirement": "\nGiven an image (\"./blobs.jpg\"), apply a circular mask at the center of the image with a radius of 100 pixels, and detect blobs only within the masked region. Draw the detected blobs (using drawKeypoints) and save the result as \"masked_blobs.png\".\n",
+        "input_images": [
+            "./blobs.jpg"
+        ]
+    },
+    {
+        "req_idx": "074",
+        "requirement": "\nGiven an image (\"./test_image.png\"), divide the image into four equal regions and apply fixed-level color reduction on each region, using different numbers of color levels for each region (e.g., 2, 4, 8, and 16 levels). Save the final image as \"color_reduction.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "075",
+        "requirement": "\nGiven an image (\"./wheres_waldo.jpg\"), and the template image (\"./waldo.jpg\"). Add Gaussian noise to the image (sigma = 1.0, mean = 0.0), then apply template matching (TM_CCOEFF_NORMED) to find the location of the template in the image. Draw a red rectangle (thickness=2) around the detected location and save the result as \"wheres_waldo_detected.png\".\n",
+        "input_images": [
+            "./wheres_waldo.jpg",
+            "./waldo.jpg"
+        ]
+    },
+    {
+        "req_idx": "076",
+        "requirement": "\nGiven an image (\"./test_image.png\"), divide the image into equal-sized tiles (2x2 grid of tiles), apply rotation (0\u00b0, 90\u00b0, 180\u00b0, and 270\u00b0) to each tile, and then reassemble the tiles back into a mosaic-style image. Save the final mosaic image as \"rotated_tiles.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "077",
+        "requirement": "\nGiven an image (\"./test_image.png\"), convert it to grayscale, apply a brightness threshold (threshold_value = 200) to separate bright and dark regions, apply Gaussian blur (kernel size = (5, 5)) only to the bright regions,  and combine the blurred bright regions with the original dark regions, save the final image as \"bright_regions.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "078",
+        "requirement": "\nGiven an image (\"./test_image.png\"), rotate the image by 90 degrees, compute the gradient magnitude for both the original and rotated images using the Sobel operator(ksize=5). Compare the gradient magnitude and save the difference using a heatmap to highlight areas of similarity and difference as \"difference_heatmap.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "079",
+        "requirement": "\nGiven an image (\"./test_image.png\"), perform Canny edge detection (threshold1 = 100, threshold2 = 200), identify the enclosed regions using contour detection, and fill these regions with a solid color (e.g., green) while keeping the edges visible, then save the final image as \"filled_regions.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "080",
+        "requirement": "\nGiven an image (\"./test_image.png\"), convert to grayscale, apply histogram equalization, and save original histogram and equalized histogram as \"original_histogram.npy\" and \"equalized_histogram.npy\", respectively.\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "081",
+        "requirement": "\nGiven an image (\"./dataset-card.jpg\"), develop a system to automatically detect and recognize the car license plate on the image (you can use easyocr for OCR). The system should output the detected license plate region and the recognized text on the license plate. Save the detected region as \"detected_plate.png\" and the recognized text as \"recognized_text.txt\".\n",
+        "input_images": [
+            "./dataset-card.jpg"
+        ]
+    },
+    {
+        "req_idx": "082",
+        "requirement": "\nGiven two images (\"./front_01.jpeg\") and (\"./front_02.jpeg\"), use SIFT to find the keypoints and stitch the images together. Save the stitched image as \"front_stitched.jpeg\". Note that \"front_01.jpeg\" is the left image and \"front_02.jpeg\" is the right image.\n",
+        "input_images": [
+            "./front_01.jpeg",
+            "./front_02.jpeg",
+            "front_01.jpeg",
+            "front_02.jpeg"
+        ]
+    },
+    {
+        "req_idx": "083",
+        "requirement": "\nGiven (\"./water_coins.jpg\"), develop an image segmentation algorithm using the Watershed method to segment an image into distinct regions based on intensity gradients, handling over-segmentation with markers, save the segmented image as \"water_coins_segmented.png\".\n",
+        "input_images": [
+            "./water_coins.jpg"
+        ]
+    },
+    {
+        "req_idx": "084",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), develop an algorithm to resize it into 1.2x width by inserting seams based on energy functions, without distorting important content, save the output image as \"./test_image_double_size.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "085",
+        "requirement": "\nGiven a list of images taken at different exposure levels (\"./hdr_1.png\"), (\"./hdr_2.png\"), (\"./hdr_3.png\"), the exposure time for each image is [1/2, 1/0.5, 1/0.0625], develop an algorithm to merge them into a single HDR image, save the output image as \"./hdr_image.hdr\".\n",
+        "input_images": [
+            "./hdr_1.png",
+            "./hdr_2.png",
+            "./hdr_3.png"
+        ]
+    },
+    {
+        "req_idx": "086",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), apply artistic effect: pencil sketch effect and highlight object borders, save the output image as \"./pencil_sketch_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "087",
+        "requirement": "\nGiven an input image (\"./texture_icon.jpg\"), apply texture systhesizing using Efros_Leung algorithm to expand the image to 128x128 pixels. Save the result as \"texture_synthesized.png\". Set np.random.seed to 0 before starting the algorithm.\n",
+        "input_images": [
+            "./texture_icon.jpg"
+        ]
+    },
+    {
+        "req_idx": "088",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), add oil painting effect to the image and save the output image as \"./output_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "089",
+        "requirement": "\nGiven an input image (\"./test_image.png\"), create a star-shape watermark and create a robust image watermarking system that embeds a watermark in the frequency domain using Discrete Wavelet Transform (DWT). Save the watermarked image as \"./watermarked_image.png\".\n",
+        "input_images": [
+            "./test_image.png"
+        ]
+    },
+    {
+        "req_idx": "090",
+        "requirement": "\nGiven an input image (\"./Phantom.png\"), apply Radon transform to the image and save the output image as \"Radon_transformed_Phantom.png\". Then apply inverse Radon transform to the transformed image and save the output image as \"Inverse_Radon_transformed_Phantom.png\".\n",
+        "input_images": [
+            "./Phantom.png"
+        ]
+    }
+]
